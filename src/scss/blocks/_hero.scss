@@ -1,0 +1,98 @@
+.hero {
+    margin-top: 21vh;
+
+    .hero_content {
+        padding: 100px 0px 50px 0px;
+
+        div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hero_title {
+            text-transform: uppercase;
+            text-align: center;
+            font-size: 100px;
+            font-weight: 600;
+            margin: 0px;
+        }
+
+        .hero_description {
+            margin: 30px auto;
+            line-height: 1.2;
+
+            span {
+                text-align: center;
+                font-size: 18px;
+                font-weight: 400;
+            }
+        }
+
+        .hero_stats {
+            text-transform: uppercase;
+            display: flex;
+            flex-direction: row;
+
+            .hero_stats-item {
+                padding: 15px 50px;
+                display: flex;
+                flex-direction: column;
+
+                .hero_stats-value {
+
+                    span {
+                        font-size: 64px;
+                        font-weight: 700;
+                    }
+                }
+
+                .hero_stats-label {
+                    span {
+                        font-size: 14px;
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+
+        .hero_feedback-button {
+            margin-top: 30px;
+
+            .feedback-button {
+                border: 3px solid $whiteColor;
+                border-radius: 22px;
+
+                background-color: $mainColor;
+                min-width: 200px;
+                height: 44px;
+                padding: 0 25px;
+                margin-top: 9px;
+                margin-bottom: 9px;
+                font-size: 13px;
+                
+                .feedback-button_text {
+                    color: $text;
+                    text-transform: uppercase;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 100%;
+                    border-radius: inherit;
+                    white-space: nowrap;
+                    position: relative;
+                    z-index: 3;
+                    font-weight: 700;
+                }
+            }
+
+            .feedback-button:hover {
+                background-color: $whiteColor;
+
+                .feedback-button_text {
+                    color: $mainColor;
+                }
+            }
+        }
+    }
+}

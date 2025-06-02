@@ -1,0 +1,24 @@
+@import 'fonts';
+@import 'variables';
+@import 'blocks/all';
+
+
+
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x:hidden;
+    background-color: $mainColor;
+
+    color: $text;
+    font-family: $mainFont;
+}
+
+section, .header, footer, .hero, .description, .contacts {
+    margin: 0px;
+    padding: 10px 20vw;
+}
+
+.btn:hover {
+    cursor: pointer;
+}

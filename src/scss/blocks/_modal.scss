@@ -1,0 +1,128 @@
+.modal {
+    visibility: hidden;
+    &.active{
+        visibility: unset;
+    }
+
+
+    background-color: rgba(0,0,0,0.7);
+    position: fixed;
+    top: 0;
+    width: 40%;
+    height: 100%;
+    padding: 0px 30%;
+
+    z-index: 50;
+
+    .modal-window {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        margin-top: 25%;
+        padding: 30px;
+        z-index: 100;
+        width: auto;
+
+        border: 2px solid $mainColor;
+        border-radius: 15px;
+        background-color: $whiteColor;
+
+        span {
+            color: $text_modal;
+        }
+
+        div {
+            width: auto;
+        }
+
+        .modal_head {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: -moz-available;
+            width: -webkit-fill-available;
+            margin: 0px 0px 30px;
+
+            .modal_close {
+                position: absolute;
+                top: 10px; 
+                right: 10px; 
+                background: none; 
+                border: none;
+                font-size: 20px;
+                color: $linkColor;
+
+                padding: 5px;
+            }
+
+            .modal_title {
+
+                span {
+                    font-weight: 600;
+                    font-size: 20px;
+                }
+            }   
+        }
+
+        form {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            
+            div {
+                width: -webkit-fill-available;
+            }
+
+            input, textarea {
+                box-sizing: border-box;
+                border:1px solid gray;
+                border-radius: 5px;
+                width: 100%;
+                padding: 10px 20px;
+            }
+
+            input:not(.modal_form_agreement-pdp input) {
+                min-height: 50px;
+            }
+
+            .modal_form_agreement-pdp {
+
+                input {
+                    margin: 0px;
+                    width: 16px;
+                }
+                
+                span {
+                    font-size: 14px;
+
+                    a {
+                        color: $linkColor;
+                        text-decoration: none;
+                    }   
+                }
+            }
+
+            .modal_form_submit {
+                display: flex;
+                justify-content: end;
+
+                button {
+                    border: 2px solid $linkColor;
+                    border-radius: 5px;
+                    background-color: $linkColor;
+                    padding: 10px 20px;
+
+                    span {
+                        font-size: 16px;
+                        font-weight: 700;
+                        color: $text;
+                    }
+                }
+            }
+        }
+    }
+}

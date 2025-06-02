@@ -1,0 +1,40 @@
+header {
+    background-color: $headerBGColor;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 25;
+
+    .header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    
+        a {
+            color: $text;
+            margin: 0px;
+            padding: 0px;
+            text-decoration: none;
+        }
+    
+        .public-name {
+            margin: 10px 5px;
+
+            h2 {
+                margin: 0px;
+            }
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 10px;
+            padding: 0px;
+
+            li {
+                display: inline-block;
+                margin: 0px 20px;
+            }
+        }
+    }
+}

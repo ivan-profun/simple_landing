@@ -1,0 +1,21 @@
+.contacts {
+    margin-bottom: 20px;
+    
+    span {
+        padding: 10px 0px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 36px;
+    }
+
+    .contacts_inn {
+        text-transform: uppercase;
+    }
+
+    hr {
+        border: none; 
+        height: 1px;
+        background-color: $whiteColor;
+        margin: 20px 0px;
+    }
+}
