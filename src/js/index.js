@@ -26,14 +26,14 @@ if (document.getElementById('btn_cookie_agree') != null) {
         cookie_window.classList.remove("active");
         cookie_agree();
     });
-
-    function cookie_agree() {
-        let date = new Date();
-        date.setTime(date.getTime() + (7 * 24 * 60 * 60 * 1000));
-        let expires = "expires=" + date.toUTCString();
-        document.cookie = "cookie_agree=true; " + expires + "; path=/";
-    };
 }
+
+function cookie_agree() {
+    let date = new Date();
+    date.setTime(date.getTime() + (7 * 24 * 60 * 60 * 1000));
+    let expires = "expires=" + date.toUTCString();
+    document.cookie = "cookie_agree=true; " + expires + "; path=/";
+};
 
 
 buttons.forEach(button => {
