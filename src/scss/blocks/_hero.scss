@@ -1,5 +1,5 @@
 .hero {
-    margin-top: 21vh;
+    margin-top: 70px !important;
 
     .hero_content {
         padding: 100px 0px 50px 0px;
@@ -11,11 +11,11 @@
         }
 
         .hero_title {
+            margin: 0px;
             text-transform: uppercase;
             text-align: center;
-            font-size: 100px;
             font-weight: 600;
-            margin: 0px;
+            font-size: 100px;
         }
 
         .hero_description {
@@ -30,27 +30,25 @@
         }
 
         .hero_stats {
-            text-transform: uppercase;
-            display: flex;
             flex-direction: row;
+            text-transform: uppercase;
 
             .hero_stats-item {
                 padding: 15px 50px;
-                display: flex;
                 flex-direction: column;
 
                 .hero_stats-value {
 
                     span {
-                        font-size: 64px;
                         font-weight: 700;
+                        font-size: 64px;
                     }
                 }
 
                 .hero_stats-label {
                     span {
-                        font-size: 14px;
                         font-weight: 500;
+                        font-size: 14px;
                     }
                 }
             }
@@ -60,37 +58,32 @@
             margin-top: 30px;
 
             .feedback-button {
-                border: 3px solid $whiteColor;
-                border-radius: 22px;
-
-                background-color: $mainColor;
                 min-width: 200px;
-                height: 44px;
-                padding: 0 25px;
+                height: 44px;  
                 margin-top: 9px;
                 margin-bottom: 9px;
+                padding: 0 25px;
+                background-color: $mainColor;
+                border: 3px solid $secondColor;
+                border-radius: 22px;
                 font-size: 13px;
+                transition: background-color 0.2s;
                 
                 .feedback-button_text {
-                    color: $text;
-                    text-transform: uppercase;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    height: 100%;
-                    border-radius: inherit;
-                    white-space: nowrap;
                     position: relative;
-                    z-index: 3;
+                    text-transform: uppercase;
                     font-weight: 700;
+                    color: $textMainColor;
+                    white-space: nowrap;
+                    z-index: 3;
                 }
             }
 
             .feedback-button:hover {
-                background-color: $whiteColor;
+                background-color: $secondColor;
 
                 .feedback-button_text {
-                    color: $mainColor;
+                    color: $textSecondColor;
                 }
             }
         }

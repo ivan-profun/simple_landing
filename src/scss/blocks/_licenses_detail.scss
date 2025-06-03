@@ -1,33 +1,29 @@
 .licenses_detail {
-    color: $text;
+    color: $textMainColor;
 
     .content {
-        padding: 70px 0;
         width: 100%;
+        padding: 70px 0;
 
         a {
             color: $linkColor;
-
-            span {
-                color: $linkColor;
-            }
         }
 
         .breadcrumb {
             margin: 0 0 10px 0;
 
             ul {
+                margin: 0;
+                padding: 0;
                 display: flex;
                 align-items: center;
                 flex-wrap: wrap;
                 list-style: none;
-                margin: 0;
-                padding: 0;
 
                 li {
-                    background: none;
-                    float: left;
                     margin: 0 10px 0 0;
+                    float: left;
+                    background: none;
                     font-size: 0.9em;
 
                     a {
@@ -41,30 +37,30 @@
                 }
 
                 li:not(:first-child)::before{
+                    margin: 0 10px 0 0;
                     content: "\f105";
                     font-family: fontAwesome;
                     font-size: 1em;
-                    margin: 0 10px 0 0;
                 }
             }
         }
 
         h1 {
-            font-size: 2em;
-            font-weight: 600;
             margin: 0 0 40px 0;
             padding-bottom: 20px;
+            font-weight: 600;
+            font-size: 2em;
             border-bottom: 1px solid #ececec;
         }
 
         h3 {
-            font-size: 1.4em;
             margin: 27px 0 20px 0;
+            font-size: 1.4em;
         }
 
         p {
-            line-height: 1.5;
             margin: 0 0 10px 0;
+            line-height: 1.5;
         }
     }
 }

@@ -1,18 +1,19 @@
 header {
-    background-color: $headerBGColor;
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 25;
+    background-color: $headerBGColor;
+    border-bottom: 1px solid $headerBGColor;
 
     .header {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
     
         a {
-            color: $text;
+            color: $textMainColor;
             margin: 0px;
             padding: 0px;
             text-decoration: none;
@@ -20,20 +21,27 @@ header {
     
         .public-name {
             margin: 10px 5px;
+            
+            a {
 
-            h2 {
-                margin: 0px;
+                h2 {
+                    margin: 0px;
+                }
             }
         }
 
-        ul {
-            list-style-type: none;
-            margin: 10px;
-            padding: 0px;
+        .public-contacts {
+            align-content: center;
 
-            li {
-                display: inline-block;
-                margin: 0px 20px;
+            ul {
+                list-style-type: none;
+                margin: 10px;
+                padding: 0px;
+
+                li {
+                    display: inline-block;
+                    margin: 0px 20px;
+                }
             }
         }
     }

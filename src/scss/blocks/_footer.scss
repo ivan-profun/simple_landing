@@ -6,7 +6,8 @@ footer {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        flex-wrap: wrap;
+        align-items: start;
+        flex-wrap: nowrap;
         margin: 0px 30px;
                 
         .public-name {
@@ -23,12 +24,15 @@ footer {
             align-items: start;
 
             .feedback-button {
-                color: $text;
                 background-color: $footerBGColor;
                 border: none;
                 margin: 10px 5px;
                 padding: 2px;
-                font-size: 16px;
+                
+                span {
+                    color: $textMainColor;
+                    font-size: 16px;
+                }
             }
         }
 
@@ -36,13 +40,14 @@ footer {
             display: flex;
             flex-direction: column;
             list-style-type: none;
-            margin: 10px;
+            margin: 0px;
             padding: 0px;
             
 
             span {
                 display: inline-block;
                 margin: 0px 20px;
+                line-height: 2;
             }
         }
     }

@@ -13,9 +13,9 @@
     }
 
     hr {
-        border: none; 
         height: 1px;
-        background-color: $whiteColor;
         margin: 20px 0px;
+        background-color: $secondColor;
+        border: none; 
     }
 }

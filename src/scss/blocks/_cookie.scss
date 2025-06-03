@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     visibility: hidden;
+
     &.active{
         margin: auto;
         padding: auto;
@@ -9,72 +10,68 @@
     }
 
     .cookie_notification {
-        display: flex; 
-        opacity: 1;
-        position: fixed;
-        bottom: 20px;
+        position: fixed; 
         left: 0;
         right: 0;
-        justify-content: center;
+        bottom: 20px;
         z-index: 1000;
         padding: 0 20px;
+        display: flex;
+        justify-content: center;
         box-sizing: border-box;
 
         .cookie_content {
-            width: 100%;
             max-width: 1200px;
-            background-color: $mainColor;
-            border: 1px solid $whiteColor;
-            border-radius: 12px;
+            width: 100%;
             padding: 16px 24px;
-            box-shadow: 0 6px 20px rgba(255, 255, 255, 0.15);
             display: flex;
             align-items: center;
             justify-content: space-between;
+            background-color: $mainColor;
+            border: 1px solid $secondColor;
+            border-radius: 12px;
+            box-shadow: 0 6px 20px rgba(255, 255, 255, 0.15);
             gap: 24px;
 
             .cookie_text {
                 margin: 0;
                 font-size: 16px;
                 line-height: 1.5;
-                color: $text;
+                color: $textMainColor;
 
                 .cookie_link {
-                    color: $text;
+                    color: $textMainColor;
                     font-weight: 700;
                 }
 
                 .cookie_link:link {
-                    color: $text;
+                    color: $textMainColor;
                 }
 
                 .cookie_link:visited {
-                    color: $text;
+                    color: $textMainColor;
                 }
             }
 
             .btn_cookie_agree {
-                background-color: $whiteColor;
-                border-color: $whiteColor;
-                font-weight: 700;
-                text-transform: uppercase;
-                letter-spacing: 0.8px;
-                text-decoration: none;
                 margin: 0;
-
-                color: $mainColor;
+                padding: 8px 16px;
+                text-transform: uppercase;
+                text-decoration: none;
+                letter-spacing: 0.8px;
+                font-weight: 700;
+                font-size: 14px;
+                color: $textSecondColor;
+                background-color: $secondColor;
+                transition: background-color 0.2s;
                 border: none;
                 border-radius: 6px;
-                padding: 8px 16px;
-                font-size: 14px;
-                
-                transition: background-color 0.2s;
                 flex-shrink: 0;
             }
 
             .btn_cookie_agree:hover {
                 background-color: $footerBGColor;
-                color: $whiteColor
+                color: $secondColor;
             }
         }
     }
