@@ -3,6 +3,7 @@
     .description_title {
         
         h1 {
+            margin: 20px 0px;
             font-weight: 500;
             font-size: 36px;
         }
@@ -12,11 +13,34 @@
 
         .paragraph {
             padding: 10px 0px;
+            text-align: justify;
 
             span {
                 font-weight: 400;
                 font-size: 14px;
                 line-height: 28px;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .description {
+
+        .description_title {
+            
+            h1 {
+                margin: 15px 0px;
+            }
+        }
+
+        .description_text {
+
+            .paragraph {
+
+                span {
+                    line-height: 24px;
+                }
             }
         }
     }

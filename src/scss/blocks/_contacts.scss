@@ -5,11 +5,16 @@
         padding: 10px 0px;
         font-weight: 400;
         font-size: 14px;
-        line-height: 36px;
+        line-height: 20px;
     }
 
     .contacts_inn {
         text-transform: uppercase;
+    }
+
+    .contacts_inn, .contacts_email_phone {
+        display: flex;
+        flex-direction: row;
     }
 
     hr {
@@ -17,5 +22,52 @@
         margin: 20px 0px;
         background-color: $secondColor;
         border: none; 
+    }
+}
+
+@media (max-width: 768px) {
+    .contacts {
+        
+        .contacts_email_phone {
+            flex-direction: column;
+
+            span:first-child {
+                padding-bottom: 2px;
+            }
+
+            span:last-child {
+                padding-top: 2px;
+            }
+        }
+
+        hr {
+            margin: 15px 0px;
+        }
+    }
+}
+
+@media (max-width: 630px) {
+    .contacts {
+        
+        .contacts_inn {
+            margin: 10px 0px;
+            flex-direction: column;
+
+            span:first-child {
+                padding-bottom: 0px;
+            }
+
+            span:last-child {
+                padding-top: 0px;
+            }
+        }
+
+        .contacts_text {
+            text-align: justify;   
+        }
+
+        hr {
+            margin: 15px 0px;
+        }
     }
 }

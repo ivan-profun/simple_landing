@@ -22,3 +22,21 @@ section, .header, footer, .hero, .description, .contacts {
 .btn:hover {
     cursor: pointer;
 }
+
+@media (max-width: 1440px) {
+    section, .header, footer, .hero, .description, .contacts {
+        padding: 10px 15vw;
+    }
+}
+
+@media (max-width: 1024px) {
+    section, .header, footer, .hero, .description, .contacts {
+        padding: 10px 10vw;
+    }
+}
+
+@media (max-width: 425px) {
+    section, .header, footer, .hero, .description, .contacts {
+        padding: 10px 5vw;
+    }
+}

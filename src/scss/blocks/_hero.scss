@@ -59,20 +59,20 @@
 
             .feedback-button {
                 min-width: 200px;
-                height: 44px;  
+                min-height: 44px;  
                 margin-top: 9px;
                 margin-bottom: 9px;
                 padding: 0 25px;
                 background-color: $mainColor;
                 border: 3px solid $secondColor;
                 border-radius: 22px;
-                font-size: 13px;
                 transition: background-color 0.2s;
                 
                 .feedback-button_text {
                     position: relative;
                     text-transform: uppercase;
                     font-weight: 700;
+                    font-size: 13px;
                     color: $textMainColor;
                     white-space: nowrap;
                     z-index: 3;
@@ -85,6 +85,153 @@
                 .feedback-button_text {
                     color: $textSecondColor;
                 }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+
+        .hero_content {
+
+            .hero_title {
+                font-weight: 700;
+                font-size: 70px;
+            }
+
+            .hero_stats {
+
+                .hero_stats-item {
+
+                    .hero_stats-value {
+
+                        span {
+                            font-size: 48px;
+                        }
+                    }
+
+                    .hero_stats-label {
+
+                        span {
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .hero {
+
+        .hero_content {
+
+            .hero_title {
+                font-size: 60px;
+            }
+
+            .hero_stats {
+
+                .hero_stats-item {
+                    padding: 15px 40px;
+
+                    .hero_stats-value {
+
+                        span {
+                            font-size: 48px;
+                        }
+                    }
+
+                    .hero_stats-label {
+
+                        span {
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 425px) {
+    .hero {
+
+        .hero_content {
+            padding: 80px 0px 50px 0px;
+
+            .hero_title {
+                font-size: 50px;
+            }
+
+            .hero_description {
+                margin: 40px auto;
+
+                span {
+                    font-size: 16px;
+                }
+            }
+
+            .hero_stats {
+                flex-direction: row;
+                text-transform: uppercase;
+
+                .hero_stats-item {
+                    padding: 15px 30px;
+
+                    .hero_stats-value {
+
+                        span {
+                            font-weight: 700;
+                            font-size: 36px;
+                        }
+                    }
+
+                    .hero_stats-label {
+
+                        span {
+                            font-weight: 500;
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 375px) {
+    .hero {
+        margin-top: 110px !important;
+
+        .hero_content {
+            padding: 60px 0px 50px 0px;
+
+            .hero_title {
+                font-size: 45px;
+            }
+
+            .hero_description {
+                margin: 40px auto;
+
+                span {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 320px) {
+    .hero {
+
+        .hero_content {
+            padding: 50px 0px 50px 0px;
+
+            .hero_title {
+                font-size: 40px;
             }
         }
     }

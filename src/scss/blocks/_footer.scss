@@ -3,12 +3,12 @@ footer {
     padding-top: 30px !important;
 
     .footer {
+        margin: 0px 30px;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: start;
         flex-wrap: nowrap;
-        margin: 0px 30px;
                 
         .public-name {
             margin: 10px 5px;
@@ -24,10 +24,10 @@ footer {
             align-items: start;
 
             .feedback-button {
-                background-color: $footerBGColor;
-                border: none;
                 margin: 10px 5px;
                 padding: 2px;
+                background-color: $footerBGColor;
+                border: none;
                 
                 span {
                     color: $textMainColor;
@@ -37,17 +37,87 @@ footer {
         }
 
         .contacts {
+            margin: 0px;
+            padding: 0px;
             display: flex;
             flex-direction: column;
             list-style-type: none;
-            margin: 0px;
-            padding: 0px;
-            
 
             span {
                 display: inline-block;
-                margin: 0px 20px;
+                margin: 0px;
                 line-height: 2;
+            }
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    footer {
+
+        .footer {
+            margin: 0px;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    footer {
+
+        .footer {
+                    
+            .public-name {
+                margin: 10px 5px;
+
+                h2 {
+                    font-size: 20px;
+                }
+            }
+
+            .feedback {
+
+                .feedback-button {
+                    
+                    span {
+                        font-size: 14px;
+                    }
+                }
+            }
+
+            .contacts {
+
+                span {
+                    font-size: 14px;
+                    line-height: 1.5;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    footer {
+
+        .footer {
+            flex-direction: column;
+
+            .feedback {
+
+                .feedback-button {
+                    margin-left: 0px;
+
+                    span {
+                        font-size: 16px;
+                    }
+                }
+            }
+
+            .contacts {
+
+                span {
+                    font-size: 14px;
+                    line-height: 1;
+                }
             }
         }
     }

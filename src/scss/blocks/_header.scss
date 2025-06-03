@@ -18,6 +18,10 @@ header {
             padding: 0px;
             text-decoration: none;
         }
+
+        div {
+            width: max-content;
+        }
     
         .public-name {
             margin: 10px 5px;
@@ -34,13 +38,80 @@ header {
             align-content: center;
 
             ul {
-                list-style-type: none;
+                width: max-content;
                 margin: 10px;
                 padding: 0px;
+                display: flex;
+                flex-direction: row;
+                list-style-type: none;
 
                 li {
                     display: inline-block;
                     margin: 0px 20px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    header{
+
+        .header {
+
+            .public-contacts {
+
+                ul {
+
+                    li {
+                        margin: 0px 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    header{
+
+        .header {
+
+            .public-name {
+                margin: 5px 5px 10px;
+            }
+
+            .public-contacts {
+
+                ul {
+                    margin: 0px;
+                    flex-direction: column;
+
+                    li {
+                        margin: 0px 10px 5px 0px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 375px) {
+    header{
+
+        .header {
+            flex-direction: column;
+            align-items: center;
+
+            .public-contacts {
+
+                ul {
+                    align-items: center;
+
+                    li {
+                        margin: 0px 0px 5px 0px;
+                        font-size: 14px;
+                    }
                 }
             }
         }
