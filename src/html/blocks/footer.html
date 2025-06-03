@@ -1,32 +1,31 @@
 <section class="modal" id="modal">
 	<div class="modal-window" id="modal_window">
 		<div class="modal_head">
-			<button class="modal_close btn" id="btn_modal_close">&times;</button>
 			<div class="modal_title">
 				<span>Хотите задать вопрос?</span>
 			</div>
+			<button class="modal_close btn" id="btn_modal_close">&times;</button>
 		</div>
-		
 		<form action="post" class="modal-data">
 			<div class="modal_form_name">
-				<input type="text" name="name" placeholder="Имя">
+				<input type="text" name="name" placeholder="Имя" required>
 			</div>
 			<div class="modal_form_email">
-				<input type="email" name="email" placeholder="E-mail">
+				<input type="email" name="email" placeholder="E-mail" required>
 			</div>
 			<div class="modal_form_phone">
-				<input type="tel" name="phone" placeholder="+7 900 800 70 60">
+				<input type="text" name="phone" placeholder="+7 900 800 70 60" required>
 			</div>
 			<div class="modal_form_message">
 				<textarea type="text" name="message" placeholder="Ваше сообщение" rows="5"></textarea>
 			</div>
 			<div class="modal_form_agreement-pdp">
-				<input type="checkbox" name="agreement">
+				<input type="checkbox" name="agreement" required>
 				<span>Я согласен на обработку <a href="licenses_detail.html">персональных данных</a></span>
 			</div>
 			<div class="modal_form_submit">
 				<button class="btn" id="send" name="send">
-					<span>отправить</span>
+					<span>Отправить</span>
 				</button>
 			</div>
 		</form>
@@ -37,11 +36,10 @@
 	<div class="cookie_notification">
 		<div class="cookie_content">
 			<p class="cookie_text">
-			Этот сайт использует cookie и сервисы сбора технических данных посетителей. 
-			Продолжая использовать наш сайт, вы автоматически соглашаетесь с использованием 
-			данных технологий, а также с 
-			<a href="licenses_detail.html" class="cookie_link">Политикой обработки 
-			и защиты персональных данных при использовании Сайта</a>
+				Этот сайт использует cookie и сервисы сбора технических данных посетителей. Продолжая использовать наш сайт, вы автоматически соглашаетесь с использованием данных технологий, а также с 
+				<a href="licenses_detail.html" class="cookie_link">
+					Политикой обработки и защиты персональных данных при использовании Сайта
+				</a>
 			</p>
 			<button class="btn_cookie_agree btn" id="btn_cookie_agree">Согласен</button>
 		</div>
@@ -57,7 +55,9 @@
 		</div>
 		<div class="feedback">
 			<button class="feedback-button btn" id="btn_modal_open">
-				<span>Обратный звонок</span>
+				<span class="feedback-button_text">
+					Обратный звонок
+				</span>
 			</button>
 		</div>
 		<div class="contacts">
