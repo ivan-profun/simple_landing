@@ -37,6 +37,7 @@
                 margin: 0;
                 font-size: 16px;
                 line-height: 1.5;
+                text-align: justify;
                 color: $textMainColor;
 
                 .cookie_link {
@@ -72,6 +73,18 @@
             .btn_cookie_agree:hover {
                 background-color: $footerBGColor;
                 color: $secondColor;
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .cookie {
+        
+        .cookie_notification {
+            
+            .cookie_content {
+                flex-direction: column;
             }
         }
     }
