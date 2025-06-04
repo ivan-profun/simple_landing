@@ -69,7 +69,7 @@
 
             input, textarea {
                 width: 100%;
-                padding: 10px 20px;
+                padding: 20px;
                 border:1px solid gray;
                 border-radius: 5px;
                 box-sizing: border-box;
@@ -115,4 +115,96 @@
             }
         }
     }
+}
+
+@media (max-width: 1440px) {
+    .modal {
+        width: 50%;
+        padding: 0px 25%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .modal {
+        width: 60%;
+        padding: 0px 20%;
+    }
+}
+
+@media (max-width: 768px) {
+    .modal {
+        width: 70%;
+        padding: 0px 15%;
+    }
+}
+
+@media (max-width: 600px) {
+    .modal {
+        width: 80%;
+        padding: 0px 10%;
+    }
+}
+
+@media (max-width: 500px) {
+    .modal {
+        width: 85%;
+        padding: 0px 7.5%;
+    }
+}
+
+@media (max-width: 425px) {
+    .modal {
+        width: 90%;
+        padding: 0px 5%;
+
+        .modal-window {
+            padding: 20px;
+            margin-top: 20%;
+
+            .modal_head {
+                margin: 0px 0px 30px;
+
+                .modal_title {
+
+                    span {
+                        font-size: 20px;
+                    }
+                }   
+            }
+
+            form {
+                gap: 30px;
+
+                .modal_form_submit {
+
+                    button {
+                        padding: 7px 15px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 375px) {
+    .modal {
+        width: 100%;
+        padding: 0px;
+
+        .modal-window {
+            margin-top: 15%;
+
+            form {
+                gap: 20px;
+            
+                input, textarea {
+                    padding: 15px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 320px) {
+
 }
